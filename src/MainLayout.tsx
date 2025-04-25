@@ -7,11 +7,11 @@ const MainLayout = () => {
   return (
     <body>
       <Header></Header>
-      <hr></hr>
+      <hr className="sm:w-[100%]  md:w-[100%]"></hr>
       <main>
         <Outlet />
       </main>
-      <hr></hr>
+      <hr className="sm:w-[100%] md:w-[100%]"></hr>
       <Footer />
     </body>
   );

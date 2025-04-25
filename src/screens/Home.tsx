@@ -15,11 +15,11 @@ const Home = () => {
           <Projects></Projects>
         </div>
       </div>
-      <div className="py-16 flex flex-row justify-center items-centers">
-        <Link to={"/contact"} className="text-7xl">
-          Benimle İletişme Geç!
+      <div className="py-16 flex flex-col md:flex-row justify-center items-center gap-2 text-center">
+        <Link to={"/contact"} className="text-4xl md:text-7xl">
+          Benimle İletişime Geç!
         </Link>
-        <p>Tıkla</p>
+        <p className="text-lg">Tıkla</p>
       </div>
     </div>
   );
@@ -29,7 +29,7 @@ const BannerTerminal = () => {
   return (
     <div>
       {/* Termnal Kısmı */}
-      <div className="mockup-code w-full bg-gray-800">
+      <div className="mockup-code w-full bg-gray-800 yok">
         <pre data-prefix="" className="">
           <code></code>
         </pre>
@@ -71,7 +71,7 @@ const BannerTerminal = () => {
 const Info = () => {
   return (
     <div>
-      <div className="pt-8 flex flex-row">
+      <div className="pt-8 flex flex-col md:flex-row items-center text-center md:text-left">
         <Link to={"/about"} className="h-yazi">
           <img
             className="w-48 h-48 rounded-xl"
@@ -80,16 +80,16 @@ const Info = () => {
           />
         </Link>
 
-        <div className="py-8 px-8">
-          <p className="text-[36px]">Ali ihsan Yıldız</p>
-          <p className="text-[16px] ">Front-end Developer</p>
-          <p className="text-[24px] w-250">
+        <div className="py-8 px-0 md:px-8">
+          <p className="text-2xl md:text-[36px]">Ali İhsan Yıldız</p>
+          <p className="text-base md:text-[16px]">Front-end Developer</p>
+          <p className="text-lg md:text-[24px] xs:w-[250px] md:w-[1000px]">
             Küçüklüğümden beri yaratmaya ve keşfetmeye meraklıyım.
             Yaratıcılığımı yazılım bilgimle harmanlayarak yeni tarifler
             pişiriyorum.
           </p>
           <div className="py-4">
-            <Icon></Icon>
+            <Icon />
           </div>
         </div>
       </div>
@@ -99,10 +99,10 @@ const Info = () => {
 
 const Projects = () => {
   return (
-    <div className="flex flex-row justify-center gap-32">
-      <Project></Project>
-      <Project></Project>
-      <Project></Project>
+    <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-32">
+      <Project />
+      <Project />
+      <Project />
     </div>
   );
 };
@@ -114,7 +114,7 @@ const Project = () => {
         src="https://koruparkevleri.com/img/tlogo.png"
         alt=""
       />
-      <hr className="mt-2 project"></hr>
+      <hr className="mt-2 project xs:w-[100px] md:w-[250px]"></hr>
       <div className="">
         <h1>Korupark Evleri Web Sitesi</h1>
         <h2>2023</h2>

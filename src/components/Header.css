@@ -3,20 +3,15 @@
 header {
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-column: 100%;
   padding: 16px;
-  text-align: center;
-}
-
-header hr {
-  width: 100%;
-  opacity: 0.7;
+  align-items: center;
 }
 
 header ul {
   display: flex;
   flex-direction: row;
   gap: 64px;
+  justify-content: flex-end;
 }
 
 header li {
@@ -26,18 +21,45 @@ header li {
 }
 
 header .logo {
-  font-size: 64px;
-  text-align: center;
-  padding-left: 80px;
+  font-size: 48px;
+  padding-left: 16px;
 }
 
 header .list {
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .h-yazi {
   text-decoration: none;
   color: white;
-  font-size: 32px;
+  font-size: 24px;
+}
+
+/* RESPONSIVE TASARIM */
+@media (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  header ul {
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 16px;
+  }
+
+  header li {
+    font-size: 24px;
+  }
+
+  header .logo {
+    font-size: 36px;
+    padding-left: 0;
+  }
+
+  .h-yazi {
+    font-size: 20px;
+  }
 }

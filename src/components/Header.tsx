@@ -2,9 +2,8 @@ import { Link } from "react-router";
 import "./Header.css";
 const Header = () => {
   return (
-    <header>
-      <div className="logo">aiyldz</div>
-
+    <header className="">
+      <div className="text-[48px] logo">aiyldz</div>
       <ul className="list">
         <li>
           <Link to={"/"} className="h-yazi">

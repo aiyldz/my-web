@@ -63,3 +63,47 @@
 .cntb:hover {
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 16px;
+  }
+
+  .baslik h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .cntb {
+    margin: 8px;
+    padding: 4px;
+  }
+
+  .bosluk span {
+    font-size: 16px;
+  }
+
+  .skill {
+    font-size: 14px;
+    padding: 4px 6px;
+  }
+
+  .project hr {
+    height: 2px;
+  }
+
+  #phone-camera {
+    width: 40px;
+    height: 15px;
+  }
+
+  #phone-display {
+    width: 100%;
+    height: auto;
+  }
+  .yok {
+    display: none;
+  }
+}
