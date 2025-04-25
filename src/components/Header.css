@@ -1,0 +1,43 @@
+/* Header */
+
+header {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-column: 100%;
+  padding: 16px;
+  text-align: center;
+}
+
+header hr {
+  width: 100%;
+  opacity: 0.7;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+}
+
+header li {
+  text-align: center;
+  font-size: 32px;
+  list-style-type: none;
+}
+
+header .logo {
+  font-size: 64px;
+  text-align: center;
+  padding-left: 80px;
+}
+
+header .list {
+  justify-content: center;
+  align-items: center;
+}
+
+.h-yazi {
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+}

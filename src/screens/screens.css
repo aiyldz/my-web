@@ -1,0 +1,65 @@
+/* About  */
+
+.project hr {
+  height: 4px;
+  size: 4px;
+}
+
+.skill {
+  border: 1px solid white;
+  padding: 2px 4px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.bosluk {
+  margin: 4px;
+}
+
+.bosluk span {
+  font-size: 20px;
+}
+
+/* Project */
+
+.section {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25%;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+#phone-camera {
+  width: 80px;
+  height: 27px;
+}
+
+#phone-display {
+  width: 273px;
+  height: 591.5px;
+}
+
+.baslik h1 {
+  font-size: 32px;
+}
+
+.chr {
+  height: 100px;
+  width: 10px;
+}
+
+.cntb {
+  border: 1px solid white;
+  border-radius: 2px;
+}
+
+.cntb:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,16 @@
+/* import  */
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
+
+/* Body */
+
+body {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 20% 40% 10%;
+  font-family: "jersey 10";
+  color: white;
+  background-color: #009247;
+}
+
+/* Mobil Css */
