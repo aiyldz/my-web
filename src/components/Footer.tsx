@@ -1,4 +1,3 @@
-import Icon from "./icon";
 const Footer = () => {
   return (
     <footer>
